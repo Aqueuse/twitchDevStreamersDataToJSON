@@ -9,7 +9,7 @@ def repeat_each_hour():
     try:
         data = get_streamers_from_twitch.get_streamers()
         streamers_number = update_json_file.update_file(data)
-        write_log(str(streamers_number) + " streamers added")
+        write_log(str(streamers_number) + " streamers added !")
     except Exception as Argument:
         write_log(Argument)
 
